@@ -56,14 +56,14 @@ tailwind.config = {
   :focus-visible { outline: 3px solid #F59E0B; outline-offset: 2px; }
 </style>
 </head>
-<body class="bg-amber-50 text-stone-900 dark:bg-stone-950 dark:text-amber-50">
+<body class="bg-amber-50 text-stone-900 dark:bg-stone-950 dark:text-amber-50 overflow-x-hidden">
 
 <a href="#main" class="sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 focus:z-50 focus:bg-amber-400 focus:text-stone-900 focus:px-4 focus:py-2 focus:rounded">Skip to content</a>
 
 <!-- Nav -->
 <header class="sticky top-0 z-40 bg-amber-50/95 dark:bg-stone-950/95 backdrop-blur border-b border-stone-200 dark:border-stone-800">
   <nav class="max-w-5xl mx-auto px-4 py-3 flex items-center justify-between" aria-label="Main navigation">
-    <a href="#top" class="font-extrabold text-lg tracking-tight">&#127928; Arlington Guitar</a>
+    <a href="#top" class="font-extrabold text-base sm:text-lg tracking-tight">&#127928; Arlington Guitar</a>
     <div class="hidden sm:flex items-center gap-6 text-sm font-medium">
       <a href="#why" class="hover:text-primary-light">Why Us</a>
       <a href="#pricing" class="hover:text-primary-light">Pricing</a>
@@ -71,8 +71,8 @@ tailwind.config = {
       <a href="#contact" class="hover:text-primary-light">Contact</a>
     </div>
     <div class="flex items-center gap-2">
-      <button id="theme-toggle" type="button" aria-label="Toggle dark mode" class="border border-stone-300 dark:border-stone-700 rounded-lg px-3 py-1.5 text-sm font-medium hover:bg-stone-200 dark:hover:bg-stone-800">&#9790;</button>
-      <a href="tel:+17032394344" class="bg-primary hover:bg-primary-light text-white font-bold rounded-lg px-4 py-2 text-sm">Call Now</a>
+      <button id="theme-toggle" type="button" aria-label="Toggle dark mode" class="border border-stone-300 dark:border-stone-700 rounded-lg px-3 py-1.5 text-sm font-medium min-w-[44px] min-h-[44px] hover:bg-stone-200 dark:hover:bg-stone-800">&#9790;</button>
+      <a href="tel:+17032394344" class="bg-primary hover:bg-primary-light text-white font-bold rounded-lg px-4 py-2 text-sm min-h-[44px] inline-flex items-center">Call Now</a>
     </div>
   </nav>
 </header>
@@ -84,8 +84,8 @@ tailwind.config = {
   <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight leading-tight mb-4">Learn Guitar.<br>Play Real Songs.</h1>
   <p class="text-lg sm:text-xl text-stone-600 dark:text-stone-300 max-w-2xl mx-auto mb-8">One-on-one in-person lessons for beginners &amp; beyond. No guitar? We provide one during your lesson.</p>
   <div class="flex flex-wrap gap-3 justify-center">
-    <a href="tel:+17032394344" class="bg-primary hover:bg-primary-light text-white font-bold rounded-xl px-8 py-3.5 text-lg">Call or Text (703) 239-4344</a>
-    <a href="mailto:arlingtonguitar@pm.me" class="border border-stone-300 dark:border-stone-700 hover:bg-stone-200 dark:hover:bg-stone-800 font-bold rounded-xl px-8 py-3.5 text-lg">Email Us</a>
+    <a href="tel:+17032394344" class="bg-primary hover:bg-primary-light text-white font-bold rounded-xl px-6 sm:px-8 py-3.5 text-base sm:text-lg max-w-full">Call or Text (703) 239-4344</a>
+    <a href="mailto:arlingtonguitar@pm.me" class="border border-stone-300 dark:border-stone-700 hover:bg-stone-200 dark:hover:bg-stone-800 font-bold rounded-xl px-6 sm:px-8 py-3.5 text-base sm:text-lg">Email Us</a>
   </div>
 </section>
 
@@ -195,9 +195,9 @@ tailwind.config = {
 <!-- Contact -->
 <section id="contact" class="max-w-3xl mx-auto px-4 py-12 text-center">
   <h2 class="text-3xl font-extrabold mb-6">Get in touch</h2>
-  <p class="text-lg mb-2"><strong>Call or text:</strong> <a class="text-primary-dark dark:text-accent-light underline" href="tel:+17032394344">(703) 239-4344</a></p>
-  <p class="text-lg mb-2"><strong>Email:</strong> <a class="text-primary-dark dark:text-accent-light underline" href="mailto:arlingtonguitar@pm.me">arlingtonguitar@pm.me</a></p>
-  <p class="text-lg"><strong>Web:</strong> <a class="text-primary-dark dark:text-accent-light underline" href="https://arlingtonguitar.live">arlingtonguitar.live</a></p>
+  <p class="text-lg mb-2"><strong>Call or text:</strong> <a class="text-primary-dark dark:text-accent-light underline break-all" href="tel:+17032394344">(703) 239-4344</a></p>
+  <p class="text-lg mb-2"><strong>Email:</strong> <a class="text-primary-dark dark:text-accent-light underline break-all" href="mailto:arlingtonguitar@pm.me">arlingtonguitar@pm.me</a></p>
+  <p class="text-lg"><strong>Web:</strong> <a class="text-primary-dark dark:text-accent-light underline break-all" href="https://arlingtonguitar.live">arlingtonguitar.live</a></p>
 </section>
 </main>
 
